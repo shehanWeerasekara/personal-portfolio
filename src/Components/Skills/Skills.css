@@ -1,0 +1,86 @@
+
+
+.skills-section {
+    padding: 80px 0;
+    color: #fff;
+  }
+  
+  .skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  
+  .skills-title h2 {
+    font-size: 3rem;
+    color: #fff;
+  }
+  
+  .skills-title .accent {
+    color: #00ff84;
+    font-family: 'Share Tech Mono', monospace;
+  }
+  
+  .skills-title .role {
+    color: #00ff84;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.5rem;
+    overflow: hidden;
+    border-right: 2px solid #00ff84;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 6s steps(20, end) infinite, blink-caret 0.75s step-end infinite;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  @keyframes typing {
+    0% { width: 0; }
+    60% { width: 17ch; }
+    80% { width: 17ch; }
+    100% { width: 0; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #00ff84; }
+  }
+  
+  .skills-content {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .skills-category {
+    background: black;
+    border: 1px solid #00ff84;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skills-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00ff84;
+  }
+  
+  .category-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #00ff84;
+    font-family: 'Share Tech Mono', monospace;
+  }
+  
+  .skills-category p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  @media (min-width: 768px) {
+    .skills-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  

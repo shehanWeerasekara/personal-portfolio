@@ -1,0 +1,141 @@
+.about-section {
+    padding: 80px 0;
+    color: #00ff84;
+    font-family: 'Share Tech Mono', monospace;
+  }
+  
+  .about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(62, 62, 64, 0); 
+    border: 2px solid #00ff84;
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-shadow: 0 0 20px #00ff84;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #00ff84;
+    padding-bottom: 10px;
+  }
+  
+  .about-title .accent {
+    color: #00ff84;
+  }
+  
+  .about-block {
+    margin: 25px 0;
+    font-weight: bold;
+  }
+  
+  .about-label {
+    color: #00ff84;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .about-value {
+    color: #ccc;
+    font-size: 1.1rem;
+    margin: 5px 0 15px 0;
+  }
+  
+  .about-description p {
+    color: #ddd;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    border-left: 3px solid #00ff84;
+    padding-left: 12px;
+    font-weight: bold;
+  }
+  
+  .about-school {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    color: #00ff84;
+    text-align: center;
+  }
+  
+  /* Glow Hover Effects */
+  .about-description p:hover {
+    color: #00ff84;
+    background: rgba(0, 255, 132, 0.1);
+    transition: 0.3s;
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Adjust the padding and layout of the about section */
+    .about-section {
+      padding: 60px 20px;
+    }
+  
+    .about-container {
+      max-width: 90%; /* Make the container more flexible on smaller screens */
+      padding: 20px 30px;
+    }
+  
+    .about-title {
+      font-size: 2rem; /* Smaller font size for titles */
+      text-align: center;
+    }
+  
+    .about-block {
+      margin: 20px 0;
+    }
+  
+    .about-label {
+      font-size: 1rem; /* Smaller font size for labels */
+    }
+  
+    .about-value {
+      font-size: 1rem; /* Smaller font size for values */
+    }
+  
+    .about-description p {
+      font-size: 0.9rem; /* Smaller font size for descriptions */
+      line-height: 1.6;
+    }
+  
+    .about-school {
+      font-size: 1rem; /* Adjust font size for school */
+      margin-top: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* Further adjustments for smaller mobile screens */
+    .about-section {
+      padding: 40px 15px;
+    }
+  
+    .about-container {
+      padding: 15px 20px;
+    }
+  
+    .about-title {
+      font-size: 1.6rem; /* Smaller title font size */
+    }
+  
+    .about-label {
+      font-size: 0.9rem; /* Even smaller font size for labels */
+    }
+  
+    .about-value {
+      font-size: 0.9rem; /* Smaller font size for values */
+    }
+  
+    .about-description p {
+      font-size: 0.8rem; /* Smaller description font size */
+      line-height: 1.5;
+    }
+  
+    .about-school {
+      font-size: 0.9rem; /* Smaller school text */
+      margin-top: 10px;
+    }
+  }
+  

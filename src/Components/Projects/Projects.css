@@ -1,0 +1,194 @@
+.projects-section {
+    padding: 80px 0;
+    color: #fff;
+    background: transparent;
+    font-family: 'Share Tech Mono', monospace;
+    margin-bottom: 100px;
+  }
+  
+  .projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  
+  .projects-title {
+    font-size: 2.2rem; 
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: right; 
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  .projects-title .accent {
+    color: #00ff84; 
+    font-family: 'Share Tech Mono', monospace;
+  }
+  
+  .projects-title .typing-effect {
+    color: #00ff84;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 2rem; /* Reduced size */
+    overflow: hidden;
+    border-right: 2px solid #00ff84;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 6s steps(20, end) infinite, blink-caret 0.75s step-end infinite;
+    display: block;
+    margin-top: 10px;
+    text-align: right; /* Align text to the right */
+  }
+  
+  @keyframes typing {
+    0% { width: 0; }
+    60% { width: 20ch; }
+    80% { width: 20ch; }
+    100% { width: 20ch; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #00ff84; }
+  }
+  
+  .projects-content {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    gap: 30px;
+  }
+  
+  .project-category {
+    background: black;
+    border: 1px solid #00ff84;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00ff84;
+  }
+  
+  .category-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #00ff84;
+    font-family: 'Share Tech Mono', monospace;
+  }
+  
+  .project-category p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd;
+  }
+  
+  .project-category .project-description p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ddd;
+    border-left: 3px solid #00ff84;
+    padding-left: 12px;
+    font-weight: bold;
+  }
+  
+  .project-category .project-description p:hover {
+    color: #00ff84;
+    background: rgba(0, 255, 132, 0.1);
+    transition: 0.3s;
+  }
+  
+  .project-link {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #00ff84;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #00ff84;
+    padding: 6px 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    justify-content: bottom;
+  }
+  
+  .project-link:hover {
+    background: #00ff84;
+    color: #000;
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Adjust the padding and layout of the projects section */
+    .projects-section {
+      padding: 60px 20px;
+    }
+  
+    .projects-title {
+      font-size: 1.8rem; /* Smaller title size */
+      text-align: center; /* Center the title */
+    }
+  
+    .projects-content {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 1fr; /* Single column for mobile */
+      gap: 20px;
+    }
+  
+    .project-category {
+      padding: 15px;
+      border-radius: 8px; /* Slightly smaller radius */
+    }
+  
+    .category-title {
+      font-size: 1.1rem; /* Smaller font size for titles */
+    }
+  
+    .project-category p {
+      font-size: 1rem; /* Smaller text for descriptions */
+    }
+  
+    .project-link {
+      font-size: 0.9rem; /* Smaller font size for links */
+      padding: 6px 15px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* Adjust padding, font sizes, and layout for smaller mobile screens */
+    .projects-section {
+      padding: 40px 15px;
+    }
+  
+    .projects-title {
+      font-size: 1.5rem; /* Further reduce title size */
+      text-align: center; /* Center the title */
+    }
+  
+    .projects-content {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr; /* Single column layout */
+      gap: 15px;
+    }
+  
+    .project-category {
+      padding: 12px; /* Smaller padding for mobile */
+      border-radius: 6px; /* More compact radius */
+    }
+  
+    .category-title {
+      font-size: 1rem; /* Smaller title font size */
+    }
+  
+    .project-category p {
+      font-size: 0.9rem; /* Smaller text for descriptions */
+    }
+  
+    .project-link {
+      font-size: 0.8rem; /* Smaller link font */
+      padding: 5px 12px;
+    }
+  }
+  
